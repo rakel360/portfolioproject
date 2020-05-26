@@ -3,65 +3,72 @@
 <html>
 <head>
 	<title>First webpage</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<div>
-    <img src=”https://via.placeholder.com/150” />
-    <h1>John Doe</h1>
-    <h3>Web Developer At Careerfoundry</h3>
-    <p>{{ Pause and ponder }}</p>
-</div>
-<div>
-	<div>
-		<h3>I am</h3>
-		<ul>
-			<li>An Engineer</li>
-			<li>A globe trotter</li>
-			<li>A hobby cook</li>
-		</ul>
+<div class="container">
+	<div class="intro">
+    	
+    	<img src="https://via.placeholder.com/150" />
+    	<h1>John Doe</h1>
+    	<h3>Web Developer At Careerfoundry</h3>
+    	<p class="quote">{{ Pause and ponder }}</p>
 	</div>
-	<div>
-		<h3>I like to</h3>
-		<ul>
-			<li>Eat chocolate icecream</li>
-			<li>Get to know people</li>
-			<li>Listen to nice music</li>
-		</ul>
+	<div class="about-grid">
+		<div class="i-am">
+			<h3>I am</h3>
+			<ul class="about-list">
+				<li>An Engineer</li>
+				<li>A globe trotter</li>
+				<li>A hobby cook</li>
+			</ul>
+		</div>
+		<div class="i-like">
+			<h3>I like to</h3>
+			<ul class="about-list">
+				<li>Eat chocolate icecream</li>
+				<li>Get to know people</li>
+				<li>Listen to nice music</li>
+			</ul>
+		</div>
 	</div>
-
-</div>
-<div>	
-	<h3>I am a developer</h3>
-	<img src="images/project-1.jpg">
-	<img src="images/project-2.jpg">
-	<img src="images/project-3.jpg">
-	<img src="images/project-6.jpg">
-</div>
-<div>
-	<h3>Links</h3>
-	<ul>
-		<li>
-			<a href="https://github.com/rakel360">Github</a>
-		</li>
-		<li>
-			<a href="https://twitter.com/rachaitaru">twitter</a>
-		</li>
-		<li>
-			<a href="https://linkedin.com/in/rachel-olema-aitaru-82169179/">Linkedin</a>
-		</li>
-		
-	</ul>
-</div>
-<div>
-	<form action="#">
-		<label for="email">
-			Email: <input type="email" id="email" placeholder="Enter your email"/>
-		</label>
-		<label>
-			Message: <textarea id="message">Your message</textarea>
-		</label>
-		<input type="submit" valid="Send message"/>
-	</form>
-</div>
+	<div class="projects-heading">	
+		<h3>My Projects</h3>
+		<div class="projects-grid">
+			<img class="project-img" src="images/project-1.jpg">
+			<img class="project-img" src="images/project-2.jpg">
+			<img class="project-img" src="images/project-3.jpg">
+			<img class="project-img" src="images/project-6.jpg">
+		</div>
+	</div>
+	<div class="links-and-contact">
+		<div class="links">
+			<h3>Links</h3>
+			<ul class="links-list">
+				<li>
+					<a href="https://github.com/rakel360">Github</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/rachaitaru">twitter</a>
+				</li>
+				<li>
+					<a href="https://linkedin.com/in/rachel-olema-aitaru-82169179/">Linkedin</a>
+				</li>
+			</ul>
+		</div>
+		<div>
+			<form action="#">
+				<label for="email">
+					Email: <input type="email" id="email" placeholder="Enter your email"/>
+				</label>
+				<label>
+					Message: <textarea id="message">Your message</textarea>
+				</label>
+				<input type="submit" valid="Send message"/>
+			</form>
+		</div>
+	</div>
+</div>	
 </body>
 </html>
